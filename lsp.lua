@@ -32,27 +32,5 @@ return {
         end
       end,
     },
-    texlab = {
-      settings = {
-        texlab = {
-          build = { onSave = true },
-          forwardSearch = {
-            executable = "zathura",
-            args = { "--synctex-forward", "%l:1:%f", "%p" },
-          },
-        },
-      },
-    },
-    yamlls = {
-      settings = {
-        yaml = {
-          schemas = {
-            ["http://json.schemastore.org/github-workflow"] = ".github/workflows/*.{yml,yaml}",
-            ["http://json.schemastore.org/github-action"] = ".github/action.{yml,yaml}",
-            ["http://json.schemastore.org/ansible-stable-2.9"] = "roles/tasks/*.{yml,yaml}",
-          },
-        },
-      },
-    },
   },
 }

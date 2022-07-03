@@ -190,4 +190,9 @@ return {
       require("syntax-tree-surfer").setup(require "user.plugins.syntax-tree-surfer")
     end,
   },
+  ["leoluz/nvim-dap-go"] = {
+    config = function()
+      require('dap-go').setup()
+    end,
+  }
 }

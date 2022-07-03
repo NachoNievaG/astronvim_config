@@ -253,6 +253,12 @@ return {
           end,
           "Clear Breakpoints",
         },
+        g = {
+          function()
+            require('dap-go').debug_test()
+          end,
+          "Debug Go Test",
+        },
         c = {
           function()
             require("dap").continue()
